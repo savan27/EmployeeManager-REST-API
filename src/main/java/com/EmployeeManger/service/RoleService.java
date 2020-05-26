@@ -7,7 +7,7 @@ import com.EmployeeManger.model.Role;
  *
  */
 public interface RoleService {
-	
+
 	// check number of rows
 	Long countRows();
 

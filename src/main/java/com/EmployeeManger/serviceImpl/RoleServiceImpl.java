@@ -17,7 +17,7 @@ public class RoleServiceImpl implements RoleService {
 
 	@Autowired
 	RoleRepository roleRepository;
-	
+
 	@Override
 	public Long countRows() {
 		return roleRepository.count();
@@ -25,7 +25,7 @@ public class RoleServiceImpl implements RoleService {
 
 	@Override
 	public boolean insert() {
-		
+
 		// set admin role
 		Role admin = new Role();
 		admin.setRole(RoleType.ADMIN.name());
